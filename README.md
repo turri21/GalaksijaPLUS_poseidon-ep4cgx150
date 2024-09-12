@@ -10,7 +10,15 @@ The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net
 
 Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board (MiSTer clone).
 
-Port to Poseidon and Senhor by [turri21](https://github.com/turri21) additional help by [CoreRasurae](https://github.com/CoreRasurae). -- The Senhor team -- 
+---
+
+Port to Poseidon-EP4CGX150 and Senhor by [turri21](https://github.com/turri21) 
+
+Additional help by [CoreRasurae](https://github.com/CoreRasurae). 
+
+-- The Senhor team -- 
+
+---
 
 ## Galaksija first model.
 
