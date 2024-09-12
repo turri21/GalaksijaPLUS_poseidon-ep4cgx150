@@ -10,6 +10,33 @@ The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net
 
 Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board. (MiSTer clone)
 
+## ROM C info
+
+The core automatically loads all 4 roms, therefore you do not have to type anything in basic to enable them.
+
+To use the monitor (RAM dump) you have to type in BASIC the following command:
+
+*A &STARTING_ADDRESS &ENDING_ADDRESS
+
+Example:
+*A &F00 &FFF
+
+or simply
+*A &F00
+
+and then ESC to break it 
+
+To use the disassembler you have to type in BASIC the following command:
+*D &STARTING_ADDRESS &ENDING_ADDRESS
+
+Example: 
+*D &F00 &FFF
+
+or simply
+*D &F00
+
+and then ESC to break it
+
 ## TODO
 
 Tape loading 
