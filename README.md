@@ -16,7 +16,7 @@ The core boots straight into PLUS mode, in other words it loads all 4 roms autom
 
 Enables ROM C: A=USR(&E000)
 
-Enabled ROM D: A=USR(&F000)
+Enables ROM D: A=USR(&F000)
 
 ---
 
