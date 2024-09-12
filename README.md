@@ -12,7 +12,13 @@ Finally, several improvements have been migrated from the respective port for th
 
 ## ROM D info
 
-The core automatically loads all 4 roms, therefore you do not have to type anything in basic to enable them.
+The core boots straight into PLUS mode, in other words it loads all 4 roms automatically.
+
+Therefore, you do not have to type anything in basic to enable them, but for the record I will list these commands here:
+Enables ROM C: A=USR(&E000)
+Enabled ROM D: A=USR(&F000)
+
+---
 
 To use the monitor (RAM dump) you have to type in BASIC the following command:
 
