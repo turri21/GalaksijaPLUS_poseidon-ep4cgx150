@@ -1,4 +1,4 @@
-# Galaksija FPGA core Poseidon-EP4CGX150 (WIP)
+# Galaksija FPGA core for Poseidon-EP4CGX150 (WIP)
 
 This port has been made thanks to the following sources: 
 
@@ -6,7 +6,9 @@ It is mainly based on the corresponding core for MiST created by [Gehstock](http
 
 Several elements such as the keyboard handling have been added from [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)'s port to MiSTer.
 
-ROM D addition based on 
+The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
+
+Finally, several improvements have been migrated from the respective port for the Senhor board. (MiSTer clone)
 
 ## License
 
@@ -18,3 +20,4 @@ This project is licensed under the MIT License.
 * Damir
 * Voja Antonic
 * Dejan Ristanovic
+* GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
