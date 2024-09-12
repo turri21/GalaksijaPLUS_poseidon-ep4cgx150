@@ -10,6 +10,16 @@ The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net
 
 Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board. (MiSTer clone)
 
+## TODO
+
+Tape loading 
+
+Saving
+
+Graphics mode 
+
+Audio
+
 ## License
 
 This project is licensed under the MIT License.
