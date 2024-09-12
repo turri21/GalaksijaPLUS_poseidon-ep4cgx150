@@ -8,7 +8,12 @@ Several elements such as the keyboard handling have been added from [hrvach](htt
 
 The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
 
-Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board. (MiSTer clone)
+Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board (MiSTer clone).
+
+## Galaksija first model.
+
+It is possible to disable the ROM C (PLUS model) and ROM D by entering the following command in BASIC:
+A=USR(&1000)
 
 ## ROM D info
 
