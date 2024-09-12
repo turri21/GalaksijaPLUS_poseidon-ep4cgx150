@@ -8,7 +8,7 @@ Several elements such as the keyboard handling have been added from [hrvach](htt
 
 The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
 
-Finally, several improvements have been migrated from the respective port for the Senhor board. (MiSTer clone)
+Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board. (MiSTer clone)
 
 ## License
 
