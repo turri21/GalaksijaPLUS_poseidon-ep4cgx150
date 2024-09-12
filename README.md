@@ -20,4 +20,5 @@ This project is licensed under the MIT License.
 * Damir
 * Voja Antonic
 * Dejan Ristanovic
+* ROM C - Authors: Nenad Balint, Nenad Dunjic and Milan Tadic
 * GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
