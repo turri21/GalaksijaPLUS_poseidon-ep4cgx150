@@ -10,6 +10,8 @@ The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net
 
 Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board (MiSTer clone).
 
+Port to Poseidon and Senhor by [turri21](https://github.com/turri21) additional help by [CoreRasurae](https://github.com/CoreRasurae). -- The Senhor team -- 
+
 ## Galaksija first model.
 
 It is possible to disable the ROM C (PLUS model) and ROM D by entering the following command in BASIC:
