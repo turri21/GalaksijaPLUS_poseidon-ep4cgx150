@@ -61,7 +61,7 @@ This project is licensed under the MIT License.
 
 * Gehstock
 * Damir
-* Voja Antonic
+* Voja Antonic - Creator of Galaksija - Author of ROM A, B and D.
 * Dejan Ristanovic
 * ROM C - Authors: Nenad Balint, Nenad Dunjic and Milan Tadic
 * GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
