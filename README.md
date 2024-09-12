@@ -62,5 +62,6 @@ This project is licensed under the MIT License.
 * Gehstock
 * Damir
 * Voja Antonic - Creator of Galaksija - Author of ROM A, B and D.
+* ROM C Authors: Nenad Balint, Nenad Dunjic and Milan Tadic
 * Dejan Ristanovic - In December 1983 he wrote a special edition of Galaksija called "Computers in Your Home" (Računari u vašoj kući), the first computer magazine in former Yugoslavia. This issue featured entire schematic diagrams guides on how to build computer Galaksija, created by Voja Antonić.
-* GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
+* *(GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
