@@ -47,11 +47,11 @@ and then ESC to break it
 
 Tape loading 
 
+Audio
+
 Saving
 
 Graphics mode 
-
-Audio
 
 ## License
 
