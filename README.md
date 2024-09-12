@@ -10,7 +10,7 @@ The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net
 
 Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board. (MiSTer clone)
 
-## ROM C info
+## ROM D info
 
 The core automatically loads all 4 roms, therefore you do not have to type anything in basic to enable them.
 
