@@ -25,9 +25,7 @@ Additional help by [CoreRasurae](https://github.com/CoreRasurae).
 It is possible to disable the ROM C (PLUS model) and ROM D by entering the following command in BASIC:
 A=USR(&1000)
 
-## ROM D info
-
-The core boots straight into PLUS mode, in other words it loads all 4 roms automatically. Therefore, you do not have to type anything in basic to enable them, but for the record I will list these commands here: 
+## ROM info
 
 Enables ROM C: A=USR(&E000)
 
