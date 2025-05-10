@@ -60,10 +60,6 @@ and then ESC to break it
 
 ## TODO
 
-Tape loading 
-
-Audio
-
 Saving
 
 Graphics mode 
