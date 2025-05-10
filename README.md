@@ -1,68 +1,82 @@
-# Galaksija PLUS FPGA core for Poseidon-EP4CGX150 (WIP)
+# Galaksija FPGA core for MiSTer
 
-This port has been made thanks to the following sources: 
+This is a FPGA implementation of Galaksija - an old Ex-Yu computer from the 1980s. It is ported from MiST and originally created by [Gehstock](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST).
 
-It is mainly based on the corresponding core for MiST created by [Gehstock](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST).
+It is a work in progress and has several issues that need to be addressed. I've added the tape drive support and fixed the CPU clock which was much higher than the original.
 
-Several elements such as the keyboard handling have been added from [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)'s port to MiSTer.
+![img](img/galaksija.jpg)
 
-The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
+## How to install
 
-Finally, several improvements have been migrated from the respective port for the [Senhor](https://github.com/turri21/Senhor) board (MiSTer clone).
+Download the latest .rbf from releases folder and place it on your SD card. Create a folder called "Galaksija" and download the .gtp files you can find in this repository under "software".
 
----
+## Running the core
 
-Port to Poseidon-EP4CGX150 and Senhor by [turri21](https://github.com/turri21) 
+After turning on, first thing you see is a "diamond" logo and prompt. You are in basic and can either start programming or load a pre-existing program from tape.
 
-Additional help by [CoreRasurae](https://github.com/CoreRasurae). 
+To load a program, type:
+```
+OLD
+```
+and press enter. Then press F12, select load and find the .tap tape file to upload. After the progress bar disappears and the prompt returns, type RUN and off you go!
 
--- The Senhor team -- 
+![img](img/loading.gif)
 
----
+## Basic
 
-## Galaksija first model.
+If you decide to start programming, you might find it useful to know the basic dialect Galaksija uses. Here is an example program:
 
-It is possible to disable the ROM C (PLUS model) and ROM D by entering the following command in BASIC:
-A=USR(&1000)
+```
+10 INPUT N
+20 Y=1
+30 FOR I=1 TO N
+40 Y=Y*I
+50 NEXT I
+60 PRINT Y
+```
 
-## ROM D info
+Commands:
 
-The core boots straight into PLUS mode, in other words it loads all 4 roms automatically. Therefore, you do not have to type anything in basic to enable them, but for the record I will list these commands here: 
+```
+ARR$, BYTE, CALL, CHR$, DOT, EDIT, ELSE, EQ, FOR, GOTO, HOME, IF, INPUT, KEY, LIST,
+MEM, NEW, NEXT, OLD, PTR, PRINT, RETURN, RND, RUN, SAVE, STEP, STOP, TAKE, UNDOT,
+USR, VAL, WORD
+```
 
-Enables ROM C: A=USR(&E000)
+Some aditional ones are available from ROM B.
 
-Enables ROM D: A=USR(&F000)
+More details about the available commands can be found [here](https://en.wikipedia.org/wiki/Galaksija_BASIC). 
 
----
+### About the computer
 
-To use the monitor (RAM dump) you have to type in BASIC the following command:
+* Released:  1983
+* CPU:	     Zilog Z80A clocked at 3.072MHz
+* RAM:	     2-6KB
+* ROM:       4-8KB (ROM A, ROM B and character ROM)
+* Display:	 64x48 monochrome
+* Input:	 Keyboard
+* Storage:   Casette drive
+  
 
-*A &STARTING_ADDRESS &ENDING_ADDRESS
+#### Memory map:
 
-Example:
-*A &F00 &FFF
+* 0000-0FFF  ROM A
+* 1000-1FFF  Reserved for ROM B
+* 2000-2037  Keyboard map
+* 2038-203F  Latch
+* 2040-27FF  Latch and keyboard repeated 31 times
+* 2800-2BFF  Video RAM
+* 2C00-3FFF  On-board RAM
+* 4000-FFFF  RAM expansion
 
-or simply
-*A &F00
 
-and then ESC to break it 
+## Known issues
 
-To use the disassembler you have to type in BASIC the following command:
-*D &STARTING_ADDRESS &ENDING_ADDRESS
+Some accuracy is lost for having own routines to generate video as opposed to implementing the composite video generation logic.  
 
-Example: 
-*D &F00 &FFF
+## Miscellaneous tipes
 
-or simply
-*D &F00
-
-and then ESC to break it
-
-## TODO
-
-Saving
-
-Graphics mode 
+* F1 and F2 serve as Repeat and List buttons.
 
 ## License
 
@@ -72,7 +86,5 @@ This project is licensed under the MIT License.
 
 * Gehstock
 * Damir
-* Voja Antonic - Creator of Galaksija - Author of ROM A, B and D.
-* ROM C Authors - Nenad Balint, Nenad Dunjic and Milan Tadic
-* Dejan Ristanovic - In December 1983 he wrote a special edition of Galaksija called "Computers in Your Home" (Računari u vašoj kući), the first computer magazine in former Yugoslavia. This issue featured entire schematic diagrams guides on how to build computer Galaksija, created by Voja Antonić.
-* *GALe - Galaksija Emulator - Copyright © 2022-2023 Dragoljub B. Obradović. All rights reserved.
+* Voja Antonic
+* Dejan Ristanovic
