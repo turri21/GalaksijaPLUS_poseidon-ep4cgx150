@@ -4,7 +4,7 @@ This port has been made thanks to the following sources:
 
 It is mainly based on the corresponding core for MiSTer created by [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)
 
-Several elements have been added from 's [Gehstock](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST) core for MiST.
+Several elements have been added from [Gehstock's](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST) core for MiST.
 
 The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
 
