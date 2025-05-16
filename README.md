@@ -69,6 +69,7 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 * Gehstock
+* hrvach
 * Damir
 * Voja Antonic - Creator of Galaksija - Author of ROM A, B and D.
 * ROM C Authors - Nenad Balint, Nenad Dunjic and Milan Tadic
