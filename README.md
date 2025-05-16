@@ -2,9 +2,11 @@
 
 This port has been made thanks to the following sources: 
 
-It is mainly based on the corresponding core for MiSTer created by [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)
+Originally it was based on the corresponding core for MiST created by [Gehstock's](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST)
 
-Several elements have been added from [Gehstock's](https://github.com/Gehstock/Mist_FPGA/tree/master/Computer_MiST/Galaksija_MiST) core for MiST.
+However, later on it was directly ported from MiSTer's Galaksija core by [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)
+
+Still, several elements have been kept from the Galaksija core for MiST, such as the AY8912 module which is not included in the respective core for MiSTer.
 
 The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
 
