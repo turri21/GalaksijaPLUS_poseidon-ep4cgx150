@@ -6,7 +6,7 @@ Originally it was based on the corresponding core for MiST created by [Gehstock'
 
 However, later on it was directly ported from MiSTer's Galaksija core by [hrvach](https://github.com/MiSTer-devel/Galaksija_MiSTer)
 
-Still, several elements have been kept from the Galaksija core for MiST, such as the AY8912 module, which is not included in the Galaksija core for MiSTer.
+Still, several elements have been kept from the Galaksija core for MiST, such as the AY8912 module (not included on MiSTer).
 
 The ROM D addition is based on [GALe - Galaksija Emulator](https://galaksija.net/)*
 
